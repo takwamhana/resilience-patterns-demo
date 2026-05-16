@@ -53,15 +53,14 @@ npm run dev     # Mode watch (rechargement automatique)
 
 ```
 resilience-patterns-demo/
-├── src/
-│   └── resilience-patterns.ts   # Bulkhead + CircuitBreaker + ResilientClient + demo
+├── resilience-patterns.ts       # Bulkhead + CircuitBreaker + ResilientClient + demo
 ├── package.json
 ├── tsconfig.json
-├── .gitignore
+├── package-lock.json             # Cree apres `npm install`
 └── README.md
 ```
 
-Le fichier principal est **`src/resilience-patterns.ts`** — un seul fichier TypeScript autonome contenant :
+Le fichier principal est **`resilience-patterns.ts`** — un seul fichier TypeScript autonome contenant :
 - La classe `Bulkhead` (pool de concurrence isole)
 - La classe `CircuitBreaker` (machine a 3 etats : CLOSED / OPEN / HALF_OPEN)
 - La classe `ResilientClient` (combinaison des deux patterns)
