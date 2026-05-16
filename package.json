@@ -1,0 +1,20 @@
+{
+  "name": "resilience-patterns-demo",
+  "version": "1.0.0",
+  "description": "Demonstration des patterns Circuit Breaker & Bulkhead en TypeScript — Takwa Mhana",
+  "main": "dist/resilience-patterns.js",
+  "scripts": {
+    "start": "npx ts-node src/resilience-patterns.ts",
+    "build": "npx tsc",
+    "dev": "npx ts-node-dev --respawn src/resilience-patterns.ts"
+  },
+  "keywords": ["circuit-breaker", "bulkhead", "resilience", "design-patterns", "typescript"],
+  "author": "Takwa Mhana",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "ts-node": "^10.9.0",
+    "ts-node-dev": "^2.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
